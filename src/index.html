@@ -343,7 +343,7 @@ let PRODUCTS = []; // La lista de productos estará inicialmente vacía o se car
 async function fetchProducts() {
     try {
         // Asume que tu API se ejecuta en la misma máquina, en el puerto 5000 o 5001
-        const response = await fetch('http://localhost:5000/api/Caps'); // <-- URL de tu API en VS
+        const response = await fetch('http://localhost:4200/api/gorras'); // <-- URL de tu API en VS
         if (!response.ok) throw new Error('Error al cargar productos de la API');
         
         PRODUCTS = await response.json(); // Reemplaza la variable PRODUCTS con los datos de la API
